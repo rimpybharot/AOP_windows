@@ -5,16 +5,16 @@ This repository is for developing sequence diagram on windows machine.
 How to run:
 
 1. Pre-reqs
-  >aspectj installed
-  >graphviz intalled
-  >classpath set for aspectj
-  >path set for aspectj
-  >path set for graphviz
+  aspectj installed
+  graphviz intalled
+  classpath set for aspect
+  path set for aspectj
+  path set for graphviz
 
 2. Clone
-  >git clone repository
-  >unzip if needed
-  >move to "src"
+  git clone repository
+  unzip if needed
+  move to "src"
 
 3. Run
   run as : 
