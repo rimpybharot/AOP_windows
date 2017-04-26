@@ -20,3 +20,5 @@ How to run:
   run as : 
   ../sequence.bat <inputfolder> <Name of file containing main method> <package name if applicable>
   The Sequence.png will get generated and opened on it's own
+  
+  
