@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Class-Path: . lib/plantuml.jar lib/commons-i
+ o-2.4.jar lib/aspectjrt.jar lib/aspectjtool
+ s.jar lib/aspectjweaver.jar lib/org.aspectj
+ .matcher.jar
+Main-Class: MyCode
+
