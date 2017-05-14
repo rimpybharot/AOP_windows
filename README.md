@@ -13,7 +13,7 @@ How to run:
 7. unzip if needed
 8. move to "src"
 9. run as :    
-  SequenceDiagramGenerator.bat <inputfolder> <Name of file containing main method> <package name if applicable>
+  SequenceDiagramGenerator.bat inputfolder MainFileName packagename(if applicable)
   The Sequence.svg will get generated and opened on it's own
   
   
