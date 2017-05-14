@@ -25,7 +25,7 @@ public aspect Tracer {
 
 
 	before(): traceMethods(){
-		caller.add(0, "InitialActor");
+		caller.add(0, "Actor");
 		
 
 		if(
@@ -82,18 +82,11 @@ public aspect Tracer {
 			+ thisJoinPointStaticPart.getSignature().getName()
 			+ "("+paramTypes+"):"
 			+ returnType
-			+"\n" + returnString
 			+ "\nactivate " + thisJoinPoint.getTarget().getClass().getSimpleName()
+			+"\n" + returnString
 			;
+			
 			caller.add(caller.size(), thisJoinPoint.getTarget().getClass().getSimpleName() );
-			
-			
-//			for(int i : count){
-//				counter += i;
-//			}
-//			System.out.println(counter);
-
-			System.out.println(sequence);
 		}
 	}
 
@@ -108,9 +101,6 @@ public aspect Tracer {
 
 
 				caller.remove(caller.size()-1);
-//				count.remove(count.size()-1);
-
-				System.out.println(sequence);
 		}
 	}
 
@@ -118,9 +108,4 @@ public aspect Tracer {
 
 		return sequence;
 	}
-
-
-
-
-
 }
