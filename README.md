@@ -12,8 +12,8 @@ How to run:
 6. git clone repository
 7. unzip if needed
 8. move to "src"
-9. run as : 
-  ../sequence.bat <inputfolder> <Name of file containing main method> <package name if applicable>
-  The Sequence.png will get generated and opened on it's own
+9. run as :    
+  SequenceDiagramGenerator.bat <inputfolder> <Name of file containing main method> <package name if applicable>
+  The Sequence.svg will get generated and opened on it's own
   
   
