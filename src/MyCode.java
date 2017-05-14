@@ -15,29 +15,23 @@ public class MyCode {
 		
 		ClassLoader classLoader = ClassLoader.getSystemClassLoader();
 
-        Class<?> loadedMyClass = classLoader.loadClass(args[0]);
-
-        System.out.println("Loaded class name: " + loadedMyClass.getName());
+        Class<?> mainClass = classLoader.loadClass(args[0]);
 
 
-		Method meth = loadedMyClass.getMethod("main", String[].class);
+		Method mainMethod = mainClass.getMethod("main", String[].class);
 		String[] params = null;
-		meth.invoke(null, (Object) params);
+		mainMethod.invoke(null, (Object) params);
 
 
-		String fileName = "Sequence.png";
+		String fileName = "Sequence.svg";
 		System.out.println("Output file located at " + fileName);
-		SourceStringReader reader = new SourceStringReader("@startuml\nactor InitialActor"
+		SourceStringReader reader = new SourceStringReader("@startuml\nactor Actor"
 				+ Tracer.getSequence()
 				+"\n@enduml");
 		Tracer.running=false;
 
 		FileOutputStream output = new FileOutputStream(new File(fileName));
-		reader.generateImage(output, new FileFormatOption(FileFormat.PNG));
+		reader.generateImage(output, new FileFormatOption(FileFormat.SVG));
 	}
 
 }
-
-
-
-
